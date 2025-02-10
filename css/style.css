@@ -410,8 +410,6 @@ h2.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
     margin-top: 40px;
 }
 
@@ -636,6 +634,47 @@ h2.my-profession {
     line-height: 25px;
 }
 
+/* Skills styles moved to service-item-inner */
+.service .service-item .service-item-inner .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.service .service-item .service-item-inner .skill-item h2 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner .skill-item .progress {
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.service .service-item .service-item-inner .skill-item .progress .progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+
+.service .service-item .service-item-inner .skill-item .skill-percent {
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
 /* portfolio */
 .portfolio .portfolio-heading {
     flex: 0 0 100%;
@@ -666,6 +705,28 @@ h2.my-profession {
     display: block;
 }
 
+/* Portfolio item styles */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .portfolio-description {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-description {
+    bottom: 0;
+}
+
 /* contact */
 .contact-title {
     color: var(--skin-color);
@@ -694,7 +755,7 @@ h2.my-profession {
 
 .contact .contact-info-item .icon .fa {
     font-size: 25px;
-    color: var(--skin-color);
+    color: var (--skin-color);
 }
 
 .contact .contact-info-item h4 {
