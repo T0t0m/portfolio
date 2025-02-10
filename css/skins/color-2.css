@@ -1,6 +1,10 @@
 :root {
     /*
-    --skin-color: #fa5b0f;
+    --skin-color: #fa5b0f; orange
     */
-    --skin-color: #d84f0e; /* Orange plus sombre pour un meilleur contraste */
+    --skin-color: #D35400; /* Orange doux pour un meilleur contraste */
+}
+
+body.dark {
+    --skin-color: #ff8c42; /* Utiliser la même couleur en mode sombre */
 }

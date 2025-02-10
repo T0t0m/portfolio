@@ -1,6 +1,10 @@
 :root {
     /*
-    --skin-color: #ec1839;
+    --skin-color: #ec1839; red
     */
-    --skin-color: #c71c2f; /* Rouge plus sombre pour un meilleur contraste */
+    --skin-color: #C0392B; /* Rouge doux pour un meilleur contraste */
+}
+
+body.dark {
+    --skin-color: #FB6F6A; /* Utiliser la même couleur en mode sombre */
 }

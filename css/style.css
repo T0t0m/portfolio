@@ -1,32 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-    --bg-black-900: #e0e0f2; /* Un bleu plus clair pour le fond */
-    --bg-black-100: #faf8ff; /* Plus clair pour le contraste */
-    --bg-black-50: #d0cbe6; /* Ton plus neutre pour garder un contraste doux */
-    --text-black-900: #2d2a44; /* Noir plus marqué, un ton plus foncé pour le texte */
-    --text-black-700: #4e4b6e; /* Gris foncé avec un peu plus de saturation */
+    --bg-black-900: #f0f0f0; /* Un gris très clair pour le fond */
+    --bg-black-100: #ffffff; /* Blanc pour le contraste */
+    --bg-black-50: #e0e0e0; /* Gris clair pour garder un contraste doux */
+    --text-black-900: #333333; /* Noir doux pour le texte */
+    --text-black-700: #666666; /* Gris foncé pour le texte secondaire */
+    --skin-color: #ff6f61; /* Une couleur vive pour les accents */
 }
 
 body.dark {
-    /*
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50: #393939;
-    --text-black-900: #ffffff;
-    --text-black-700: #e9e9e9;
-    */
-    --bg-black-900: #0d0d03; /* Fond très sombre, presque noir */
-    --bg-black-100: #020606; /* Un gris très foncé pour donner un effet de profondeur */
-    --bg-black-50: #171013;  /* Gris très foncé pour les éléments secondaires */
-    --text-black-900: #cfcfb2; /* Jaune pâle ou vert clair pour améliorer la lisibilité sur fond sombre */
-    --text-black-700: #afb18f; /* Gris pâle avec une touche de jaune pour ajouter du contraste */
+    --bg-black-900: #1e1e1e; /* Fond très sombre */
+    --bg-black-100: #2c2c2c; /* Gris très foncé pour donner un effet de profondeur */
+    --bg-black-50: #3a3a3a;  /* Gris foncé pour les éléments secondaires */
+    --text-black-900: #f5f5f5; /* Blanc cassé pour améliorer la lisibilité sur fond sombre */
+    --text-black-700: #cccccc; /* Gris clair pour le texte secondaire */
+    --skin-color: #ff6f61; /* Une couleur vive pour les accents */
 }
 
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-family: Poppins;
 }
 
 * {
@@ -109,14 +104,14 @@ ul {
     margin-bottom: 60px;
 }
 
-.section-title h2 {
+.section-title h1 {
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
 }
 
-.section-title h2::before {
+.section-title h1::before {
     content: '';
     height: 4px;
     width: 50px;
@@ -126,7 +121,7 @@ ul {
     left: 0;
 }
 
-.section-title h2::after {
+.section-title h1::after {
     content: '';
     height: 4px;
     width: 25px;
@@ -147,7 +142,7 @@ ul {
 
 .btn {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 12px 35px;
     color: var(--bg-black-100);
     border-radius: 40px;
@@ -295,7 +290,7 @@ ul {
 
 .aside .nav li a {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
@@ -322,19 +317,19 @@ ul {
     max-width: 60%;
 }
 
-h3.hello {
+h1.hello {
     font-size: 28px;
     margin: 15px 0;
 }
 
-h3.hello span {
+h1.hello span {
     font-family: 'Clicker Script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
 
-h3.my-profession {
+h2.my-profession {
     font-size: 30px;
     margin: 15px 0;
 }
@@ -397,14 +392,14 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.about .about-content .about-text h3 {
+.about .about-content .about-text h1 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
 }
 
-.about .about-content .about-text h3 span {
+.about .about-content .about-text h1 span {
     color: var(--skin-color);
 }
 
@@ -459,7 +454,7 @@ h3.my-profession {
     max-width: 100%;
 }
 
-.about .about-content .skills .skill-item h5 {
+.about .about-content .skills .skill-item h2 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
@@ -504,7 +499,7 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content h3.title {
+.about .about-content h2.title {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
@@ -627,7 +622,7 @@ h3.my-profession {
     color: #ffffff;
 }
 
-.service .service-item .service-item-inner h4 {
+.service .service-item .service-item-inner h2 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);

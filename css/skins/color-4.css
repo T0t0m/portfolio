@@ -1,3 +1,10 @@
 :root {
-    --skin-color: #1854b4;
+    /*
+    --skin-color: #1854b4; blue
+    */
+    --skin-color: #1565C0; /* Bleu doux pour un meilleur contraste */
+}
+
+body.dark {
+    --skin-color: #3198F2; /* Utiliser la même couleur en mode sombre */
 }

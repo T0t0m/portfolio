@@ -1,6 +1,10 @@
 :root {
     /*
-    --skin-color: #f021b2;
+    --skin-color: #f021b2; pink
     */
-    --skin-color: #d50087; /* Rose plus sombre pour un meilleur contraste */
+    --skin-color: #C2185B; /* Rose doux pour un meilleur contraste */
+}
+
+body.dark {
+    --skin-color: #F254C3; /* Utiliser la même couleur en mode sombre */
 }
