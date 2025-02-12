@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
 
 :root {
     --bg-black-900: #f0f0f0; /* Un gris très clair pour le fond */
@@ -21,7 +21,7 @@ body.dark {
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: Poppins;
+    font-family: 'Chakra Petch', sans-serif; /* Mise à jour de la police */
 }
 
 * {
@@ -104,11 +104,14 @@ ul {
     margin-bottom: 60px;
 }
 
-.section-title h1 {
+.section-title h1,
+h1.hello,
+.aside .logo h1 {
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
 }
 
 .section-title h1::before {
@@ -158,7 +161,26 @@ ul {
 }
 
 .shadow-dark {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
+}
+
+h2, h3, h4, h5, h6,
+.about .about-content .about-text h1,
+.about .about-content h2.title,
+.skills .skills-item .skill-item-inner h2,
+.portfolio .portfolio-heading h2,
+.contact .contact-info-item h4,
+h2.my-profession,
+.aside .nav li a {
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 /* aside */
@@ -190,13 +212,13 @@ ul {
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     position: relative;
 }
 
 .aside .logo a span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 40px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
 }
 
 .aside .logo a::before {
@@ -204,8 +226,8 @@ ul {
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
+    background-color: var(--skin-color); 
+    clip-path: polygon(0% 50%, 50% 100%, 100% 100%, 100% 80%, 60% 80%, 20% 40%, 20% 0%, 0% 0%, 0% 50%);
     bottom: 0;
     left: 0;
 }
@@ -215,8 +237,8 @@ ul {
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
+    background-color: var(--skin-color); 
+    clip-path: polygon(100% 50%, 50% 0%, 0% 0%, 0% 20%, 40% 20%, 80% 60%, 80% 100%, 100% 100%, 100% 50%);
     top: 0;
     right: 0;
 }
@@ -318,13 +340,16 @@ ul {
 }
 
 h1.hello {
-    font-size: 28px;
-    margin: 15px 0;
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
 }
 
 h1.hello span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 30px;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 40px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -332,6 +357,7 @@ h1.hello span {
 h2.my-profession {
     font-size: 30px;
     margin: 15px 0;
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 .typing {
@@ -354,30 +380,28 @@ h2.my-profession {
 .home-img::before {
     content: '';
     position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    border-top-left-radius: 50px;
+    width: 80px; 
+    height: 80px; 
+    background-color: var(--skin-color); 
+    clip-path: polygon(0% 50%, 50% 0%, 100% 0%, 100% 20%, 60% 20%, 20% 60%, 20% 100%, 0% 100%, 0% 50%);
     left: 10px;
     top: -40px;
-}
+  }
 
 .home-img::after {
     content: '';
     position: absolute;
     height: 80px;
     width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    border-bottom-right-radius: 50px;
+    background-color: var(--skin-color); 
+    clip-path: polygon(100% 50%, 50% 100%, 0% 100%, 0% 80%, 40% 80%, 80% 40%, 80% 0%, 100% 0%, 100% 50%);
     right: 10px;
     bottom: -40px;
 }
 
 .home .home-img img {
     margin: auto;
-    border-radius: 50px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 15%, 100% 100%, 25% 100%, 0% 85%, 0% 0%);
     height: 400px;
 }
 
@@ -397,6 +421,7 @@ h2.my-profession {
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 .about .about-content .about-text h1 span {
@@ -441,55 +466,6 @@ h2.my-profession {
     margin-top: 10px;
 }
 
-.about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
-}
-
-.about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about-content .skills .skill-item h2 {
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-
-.about .about-content .skills .skill-item .progress {
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-
-.about .about-content .skills .skill-item {
-    margin-bottom: 25px;
-}
-
-.about .about-content .skills .skill-item .progress .progress-in {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.about .about-content .skills .skill-item .skill-percent {
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
 .about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 50%;
@@ -502,6 +478,7 @@ h2.my-profession {
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 .about .about-content .timeline-box {
@@ -513,9 +490,30 @@ h2.my-profession {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
     border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
     width: 100%;
     position: relative;
+}
+
+.about .about-content .timeline::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-black-900); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
+    right: -15px;
+    top: -15px;
+}
+
+.about .about-content .timeline::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-black-900); 
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
+    left: -15px;
+    bottom: -15px;
 }
 
 .about .about-content .timeline .timeline-item {
@@ -574,27 +572,51 @@ h2.my-profession {
     color: var(--text-black-700);
 }
 
-/* service */
-.service .service-item {
+/* skills */
+.skills .skills-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
 
-.service .service-item .service-item-inner {
+.skills .skills-item .skill-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
+    width: 100%;
+    position: relative;
     text-align: center;
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+.skills .skills-item .skill-item-inner::before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: var(--bg-black-900); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
+    right: -15px;
+    top: -15px;
 }
 
-.service .service-item .service-item-inner .icon {
+.skills .skills-item .skill-item-inner::after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: var(--bg-black-900); 
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
+    left: -15px;
+    bottom: -15px;
+}
+
+.skills .skills-item .skill-item-inner:hover {
+    box-shadow: 0 0 15px rgba(48, 46, 77, 0.15);
+}
+
+.skills .skills-item .skill-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -604,52 +626,55 @@ h2.my-profession {
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa {
+.skills .skills-item .skill-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover .icon {
+.skills .skills-item .skill-item-inner:hover .icon {
     background-color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa {
+.skills .skills-item .skill-item-inner:hover .icon .fa {
     font-size: 25px;
     color: #ffffff;
 }
 
-.service .service-item .service-item-inner h2 {
+.skills .skills-item .skill-item-inner h2 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
-.service .service-item .service-item-inner p {
+.skills .skills-item .skill-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
 
-/* Skills styles moved to service-item-inner */
-.service .service-item .service-item-inner .skill-item {
+.skills .skills-item .skill-item-innerr .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 25px;
 }
 
-.service .service-item .service-item-inner .skill-item h2 {
+.skills .skills-item .skill-item-inner .skill-item h2 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
 
-.service .service-item .service-item-inner .skill-item .progress {
+.skills .skills-item .skill-item-inner .skill-item .progress {
     background-color: var(--bg-black-50);
     height: 7px;
     border-radius: 4px;
@@ -657,7 +682,7 @@ h2.my-profession {
     position: relative;
 }
 
-.service .service-item .service-item-inner .skill-item .progress .progress-in {
+.skills .skills-item .skill-item-inner .skill-item .progress .progress-in {
     position: absolute;
     left: 0;
     top: 0;
@@ -666,7 +691,7 @@ h2.my-profession {
     background-color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner .skill-item .skill-percent {
+.skills .skills-item .skill-item-inner .skill-item .skill-percent {
     position: absolute;
     right: 0;
     color: var(--text-black-900);
@@ -685,6 +710,7 @@ h2.my-profession {
 .portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 .portfolio .portfolio-item {
@@ -694,6 +720,8 @@ h2.my-profession {
 }
 
 .portfolio .portfolio-item-inner {
+    width: 100%;
+    position: relative;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
@@ -716,11 +744,28 @@ h2.my-profession {
     bottom: -100%;
     left: 0;
     width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 15px;
     box-sizing: border-box;
     transition: bottom 0.3s ease;
+}
+
+.portfolio-item .portfolio-description h3 {
+    font-size: 18px;
+}
+
+.portfolio-item .portfolio-description h4 {
+    font-size: 16px;
+}
+
+.portfolio-item .portfolio-description p {
+    font-size: 14px;
+}
+
+.portfolio-item .portfolio-description a {
+    font-size: 14px;
 }
 
 .portfolio-item:hover .portfolio-description {
@@ -764,6 +809,7 @@ h2.my-profession {
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
 
 .contact .contact-info-item p {
@@ -857,7 +903,7 @@ h2.my-profession {
 
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item {
+    .skills .skills-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -877,12 +923,20 @@ h2.my-profession {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item,
+    .skills .skills-item,
     .about .about-content .experience,
     .about .about-content .education,
-    .about .about-content .skills,
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+.about .about-content .about-text h1,
+.about .about-content h2.title,
+.skills .skills-item .skill-item-inner h2,
+.portfolio .portfolio-heading h2,
+.contact .contact-info-item h4,
+h2.my-profession {
+    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
 }
