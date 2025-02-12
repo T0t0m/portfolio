@@ -21,7 +21,7 @@ body.dark {
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Chakra Petch', sans-serif; /* Mise à jour de la police */
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 * {
@@ -111,7 +111,7 @@ h1.hello,
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
-    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
+    font-family: 'Audiowide', sans-serif;
 }
 
 .section-title h1::before {
@@ -169,7 +169,7 @@ h1 {
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
-    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
+    font-family: 'Audiowide', sans-serif; 
 }
 
 h2, h3, h4, h5, h6,
@@ -180,7 +180,7 @@ h2, h3, h4, h5, h6,
 .contact .contact-info-item h4,
 h2.my-profession,
 .aside .nav li a {
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 /* aside */
@@ -344,7 +344,7 @@ h1.hello {
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
-    font-family: 'Audiowide', sans-serif; /* Mise à jour de la police */
+    font-family: 'Audiowide', sans-serif; 
 }
 
 h1.hello span {
@@ -357,7 +357,7 @@ h1.hello span {
 h2.my-profession {
     font-size: 30px;
     margin: 15px 0;
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .typing {
@@ -421,7 +421,7 @@ h2.my-profession {
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-black-900);
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .about .about-content .about-text h1 span {
@@ -478,7 +478,7 @@ h2.my-profession {
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .about .about-content .timeline-box {
@@ -648,7 +648,7 @@ h2.my-profession {
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .skills .skills-item .skill-item-inner p {
@@ -710,7 +710,7 @@ h2.my-profession {
 .portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .portfolio .portfolio-item {
@@ -809,7 +809,7 @@ h2.my-profession {
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
 
 .contact .contact-info-item p {
@@ -938,5 +938,5 @@ h2.my-profession {
 .portfolio .portfolio-heading h2,
 .contact .contact-info-item h4,
 h2.my-profession {
-    font-family: 'Orbitron', sans-serif; /* Mise à jour de la police */
+    font-family: 'Orbitron', sans-serif; 
 }
